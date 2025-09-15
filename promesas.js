@@ -29,7 +29,11 @@ const multiplicar = (num1, num2) =>{
     });
 };
 
-multiplicar(2,3)
+multiplicar(1,2)
+.then((response) =>{
+    console.log(`${response.num1} * ${response.num2} = ${response.resultado} `);
+    return multiplicar(2,3);
+})
 .then((response) =>{
     console.log(`${response.num1} * ${response.num2} = ${response.resultado} `);
 })
