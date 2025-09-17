@@ -1,9 +1,10 @@
-const num1 = [1,2,33];
+/*const num1 = [1,2,33];
 const num2 = [33,4,5,6];
 
 //const num3 = num1.concat(num2);
 const num3 = [...num1,...num2];
 console.log(num3);
+*/
 
 const personal = {
     nombre: "Leonel",
@@ -16,3 +17,9 @@ const oficio = {
     oficio: "Ingeniero",
     edad: 33,
 };
+
+//const empleado = Object.assign({}, personal,oficio);
+//console.log(empleado);
+
+const empleado = {...personal, ...oficio};
+console.log(empleado);
