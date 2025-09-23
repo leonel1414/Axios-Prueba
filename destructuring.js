@@ -18,4 +18,6 @@ const persona1 ={
 
 const {nombre1, apellido1,edad1, salario1, profesion1} = persona1;
 
+//const {nombre1, apellido1,edad1, salario1 = 'sin especificar', profesion1} = persona1;
+
 console.log(nombre1, apellido1,edad1, salario1, profesion1);
