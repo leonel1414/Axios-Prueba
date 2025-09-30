@@ -23,8 +23,14 @@ function Persona(nombre,apellido,edad){
 //persona.saludar();
 
 
-function Empleado(nombre,apellido,edad,salario){}
+function Empleado(nombre,apellido,edad,salario){
+    Persona.call(this,nombre,apellido,edad);
+    this.salario = salario;
+}
 
 Empleado.prototype = Object.create(Persona);
+Empleado.prototype.constructor = Empleado;
 
 const empleado1 = new Empleado('Leonel','Girett',32,1000);
+
+console.log(empleado1 instanceof Empleado);
