@@ -11,15 +11,20 @@ function Persona(nombre,apellido,edad){
     this.edad = edad;
 }
 
-Persona.prototype.saludar = function(){
+//Persona.prototype.saludar = function(){
 
-    console.log(`Hola soy ${this.nombre} ${this.apellido}`)
-}
+  //  console.log(`Hola soy ${this.nombre} ${this.apellido}`)
+//}
 
-const persona = new Persona('Leonel','Girett',32);
+//const persona = new Persona('Leonel','Girett',32);
 
-console.log(persona)
+//console.log(persona)
 
-persona.saludar();
+//persona.saludar();
 
-//11:03
+
+function Empleado(nombre,apellido,edad,salario){}
+
+Empleado.prototype = Object.create(Persona);
+
+const empleado1 = new Empleado('Leonel','Girett',32,1000);
