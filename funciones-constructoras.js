@@ -33,4 +33,4 @@ Empleado.prototype.constructor = Empleado;
 
 const empleado1 = new Empleado('Leonel','Girett',32,1000);
 
-console.log(empleado1 instanceof Empleado);
+console.log(empleado1, empleado1 instanceof Persona);
