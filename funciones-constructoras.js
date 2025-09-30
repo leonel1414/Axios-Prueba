@@ -11,10 +11,10 @@ function Persona(nombre,apellido,edad){
     this.edad = edad;
 }
 
-//Persona.prototype.saludar = function(){
+Persona.prototype.saludar = function(){
 
-  //  console.log(`Hola soy ${this.nombre} ${this.apellido}`)
-//}
+    console.log(`Hola soy ${this.nombre} ${this.apellido}`)
+}
 
 //const persona = new Persona('Leonel','Girett',32);
 
