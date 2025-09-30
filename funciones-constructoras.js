@@ -12,8 +12,9 @@ function Persona(nombre,apellido,edad){
 }
 
 Persona.prototype.saludar = function(){
-
+    
     console.log(`Hola soy ${this.nombre} ${this.apellido}`)
+
 }
 
 //const persona = new Persona('Leonel','Girett',32);
