@@ -5,7 +5,22 @@
 
 const persona = {
     nombre: 'Leonel',
-    apellido: 'Girett'
+    apellido: 'Girett',
+    edad : 32,
+    isAdmin: true,
+    idiomas: ["Español", "Ingles"],
+    direccion: {
+        calle:'Calle falsa',
+        numero: 123
+    },
 };
 
-console.log(persona);
+persona.telefono = 123456789;
+
+delete persona.edad;
+
+//cambio de datos
+persona.nombre = 'Mauricio';
+
+//muestra
+console.log(persona.nombre, persona['apellido']);
