@@ -13,6 +13,12 @@ const persona = {
         calle:'Calle falsa',
         numero: 123
     },
+    nombreCompleto: function(){
+        return `${this.nombre} ${this.apellido}`;
+    },
+    saludar: function(){
+        console.log(`Mi nombre es: ${this.nombreCompleto()}`)
+    }
 };
 
 persona.telefono = 123456789;
@@ -24,3 +30,5 @@ persona.nombre = 'Mauricio';
 
 //muestra
 console.log(persona.nombre, persona['apellido']);
+
+persona.saludar();
