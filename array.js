@@ -4,8 +4,23 @@ numeros.forEach((numero, index) =>{
     numeros[index] = Number((numeros * 1.1).toFixed(2));
 
     // numero *= 1.1;
-    
+
     console.log(`El numero aumento es: ${numeros[index]}`);
 
 });
+
+//for in
+for (const index in numeros) {
+
+    numeros[index] = Number((numeros[index] * 1.1).toFixed(2));
+    console.log(`El numero aumento es: ${numeros[index]}`);
+
+}
+
+//for off -> para objetos
+for(let numero of numeros){
+    numero = Number((numeros * 1.1).toFixed(2));
+    console.log(`El numero es: ${numero}`);
+
+}
 
