@@ -24,3 +24,10 @@ for(let numero of numeros){
 
 }
 
+//map
+nuevoArray = numeros.map(numero => Number((numero *1.1).toFixed(2)));
+
+nuevoArray.forEach((numero) => console.log(`El numero es: ${numero}`));
+
+console.log(numeros,nuevoArray);
+
